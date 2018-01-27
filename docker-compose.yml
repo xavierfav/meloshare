@@ -34,6 +34,10 @@ services:
       - .:/var/www/meloshare
     depends_on:
       - broker
+    volumes:
+      - .:/var/www/meloshare
+    depends_on:
+      - redis_cache
 
   db:
     image: "postgres:alpine"

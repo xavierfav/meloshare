@@ -1,5 +1,5 @@
 # Meloshare
-Collaborative music sketching web application
+Collaborative music sketching web application.
 
 ## Installation
 ### Clone the repository

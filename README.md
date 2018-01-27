@@ -14,6 +14,7 @@ pip install -r requirements.txt
 
 ### Install and run Redis
 ```
+apt install redis-server
 redis-server
 ```
 

@@ -4,22 +4,20 @@ Built using Python Flask, Flask-Flash, Celery and Redis.
 
 ## Quickstart (Docker)
 You'll need to have `docker` and `docker-compose` installed.
-
-**Note:** To get a compatible docker-compose, don't use `apt` to install it.
-As sudo user, type:
-```
-rm /usr/bin/docker-compose
-curl -L https://github.com/docker/compose/releases/download/1.11.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
-```
-
-Now you can run the docker-compose.yml file in the root directory of the app:
+Run the docker-compose.yml file in the root directory of the app:
 ```
 docker-compose up
 ```
 
 * Run it in background by using `docker-compose up -d` (detached).
 * Tail the logs by using `docker-compose`.
+
+**Note:** If you get a "version unsupported" error, you need to upgrade `docker-compose`:
+```
+sudo rm /usr/bin/docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.11.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
 
 ## Quickstart
 Let's clone the repo, create a virtualenv, install the pip requirements and run our application.

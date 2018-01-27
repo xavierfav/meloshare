@@ -1,8 +1,4 @@
-from flask_flash import Flash
-from config import config
-from extensions import EXTENSIONS
-from resources import RESOURCES
+from . import create_app
+import os
 
-def create_app(profile='development'):
-    app = Flash(resources=RESOURCES, config=config, profile=profile)
-    return app
+app = create_app(os.environ.get('PROFILE', 'development'))

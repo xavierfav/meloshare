@@ -2,39 +2,48 @@
 Collaborative music sketching web application.
 Built using Python Flask, Flask-Flash, Celery and Redis.
 
-### Quickstart
+## Quickstart
 Let's clone the repo, create a virtualenv, install the pip requirements and run our application.
 
 ```
+# Get the code
 git clone https://github.com/xavierfav/meloshare
-mkvirtualenv meloshare # create virtualenv using virtualenvwrapper library. You can also use the command `virtualenv venv`.
-pip install -r requirements.txt # install pip dependencies
-apt install redis-server # install Redis
+
+# Create virtualenv
+mkvirtualenv meloshare # Note: You can also use the command `virtualenv venv`.
+
+# Install pip dependencies
+pip install -r requirements.txt 
+
+# Install Redis
+apt install redis-server 
+
+# Run supervisor
 supervisord -c supervisord.conf # run all services
-supervisorctl # administrate services (stop, start, restart, reload, ...)
+
+# Administrate services (stop, start, restart, reload, ...)
+supervisorctl 
 ```
 
-The following services should be available to you in `supervisorctl`:
+After running the above steps the following services should be RUNNING in `supervisorctl` shell:
 - `ui`  --> User interface (port 5000)
 - `api` --> Application programming interface (port 5001)
 - `worker` --> Celery worker processing tasks
 - `scheduler` --> Celery scheduler for periodic tasks
 - `redis` --> Redis server (API caching for GET requests)
 
-## Installation
-### Clone the repository
-```
-git clone https://github.com/xavierfav/meloshare
-```
+Supervisor allows you to administrate the services from the shell with the commands: `status <service>`, `start <service>`, `stop <service>`, `restart <service>`, or `tail -f <service>`.
+You can also use 'start/stop/status all' to control all services.
+You can pass a space-separated list of services to control multiple simultaneously.
+You can reload the supervisor configuration and update the running processes: `reread` and then `update`.
 
-### Install the dependencies
-```
-pip install -r requirements.txt
-```
+## Running services manually
 
-### Install and run Redis
+Supervisor is merely running commands for you and control the life of your processes.
+The following shows which command is run by supervisor for each service.
+
+### Run Redis
 ```
-apt install redis-server
 redis-server
 ```
 

@@ -1,1 +1,35 @@
-
+version: "3"
+services:
+  ui:
+    build: .
+    command: python -m flask run --host 0.0.0.0 --port 5000
+    environment:
+      - FLASK_APP=meloshare/ui/app.py
+      - FLASK_DEBUG=True
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/var/www/meloshare
+      
+  api:
+    build: .
+    command: python -m flask run --host 0.0.0.0 --port 5001
+    environment:
+      - FLASK_APP=meloshare/api/app.py
+      - FLASK_DEBUG=True
+    ports:
+      - "5001:5001"
+    volumes:
+      - .:/var/www/meloshare
+      
+  worker:
+    build: .
+    command: python -m celery -A meloshare.celeryapp:app -l info
+    volumes:
+      - .:/var/www/meloshare
+      
+  postgres:
+    image: "postgres:alpine"
+  
+  redis:
+    image: "redis:alpine"

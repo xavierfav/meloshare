@@ -12,6 +12,11 @@ git clone https://github.com/xavierfav/meloshare
 pip install -r requirements.txt
 ```
 
+### Install and run Redis
+```
+redis-server
+```
+
 ### Run the ui
 ```
 FLASK_APP=meloshare/ui/app.py flask run

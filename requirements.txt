@@ -9,7 +9,7 @@ click==6.7
 Faker==0.8.10
 Flask==0.12.2
 Flask-Caching==1.3.3
--e git+http://github.com/ocervell/flask-flash@ac8e0b83ecee65b03245e58de6aa623eb2bc92c1#egg=Flask_Flash
+Flask-Flash==1.6.8
 Flask-HTTPAuth==3.2.3
 Flask-JSGlue==0.3.1
 flask-marshmallow==0.8.0
@@ -28,7 +28,6 @@ MarkupSafe==1.0
 marshmallow==2.15.0
 marshmallow-sqlalchemy==0.13.2
 meld3==1.0.2
--e git+https://github.com/xavierfav/meloshare@5216a0592d2d256a727ee4152ddfd60452eebabf#egg=meloshare
 numpy==1.14.0
 python-dateutil==2.6.1
 python-editor==1.0.3

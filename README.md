@@ -5,7 +5,7 @@ Built using Python Flask, Flask-Flash, Celery and Redis.
 ## Quickstart (Docker)
 You'll need to have `docker` and `docker-compose` installed.
 
-Build and run the services:
+Run meloshare:
 ```
 docker-compose up
 ```

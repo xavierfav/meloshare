@@ -11,7 +11,7 @@ docker-compose up
 ```
 
 * Run in the background by using `docker-compose up -d` (detached).
-* Tail the logs by using `docker-compose logs`.
+* Tail the logs by using `docker-compose logs -f`.
 
 **Note:** If you get a "version unsupported" error, you need to upgrade `docker-compose`:
 ```

@@ -22,27 +22,33 @@ services:
     volumes:
       - .:/var/www/meloshare
     depends_on:
-      - redis_db
-      - postgres
+      - cache
+      - db
 
   worker:
     build: .
     command: python -m celery worker -A meloshare.celeryapp:app -l info
     environment:
-      - BROKER_URL=redis://redis_db:6379
+      - BROKER_URL=amqp://broker:5672
     volumes:
       - .:/var/www/meloshare
     depends_on:
-      - redis_db
+      - broker
 
-  postgres:
+  db:
     image: "postgres:alpine"
+    volumes:
+      - /var/lib/postgresql
 
-  redis_db:
+  cache:
     image: "redis:alpine"
 
-  nginx:
-    image: "nginx:alpine"
-    ports:
-     - "8080:80"
-    command: /bin/bash -c "nginx -g 'daemon off;'"
+  broker:
+    image: "rabbitmq:alpine"
+
+  #nginx_proxy:
+  #  build: ./nginx
+  #  depends_on:
+  #    - ui
+  #  ports:
+  #   - "8080:80"

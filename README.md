@@ -36,7 +36,7 @@ After running the above steps the following services should be RUNNING in `super
 
 Supervisor allows you to administrate the services from the shell with the commands: `status <service>`, `start <service>`, `stop <service>`, `restart <service>`, or `tail -f <service>`.
 
-You can also use 'start/stop/status all' to control all services.
+You can also use `start/stop/status all` to control all services.
 
 You can pass a space-separated list of services to control multiple simultaneously.
 

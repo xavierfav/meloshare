@@ -36,8 +36,6 @@ services:
     
   nginx:
     image: "nginx:alpine"
-    volumes:
-     - ./nginx.conf:/etc/nginx/conf.d/meloshare.nginx.conf
     ports:
      - "8080:80"
     command: /bin/bash -c "nginx -g 'daemon off;'"

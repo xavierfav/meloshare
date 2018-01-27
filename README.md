@@ -1,4 +1,4 @@
-# meloshare
+# Meloshare
 Collaborative music sketching web application
 
 ## Installation

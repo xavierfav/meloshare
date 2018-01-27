@@ -18,14 +18,14 @@ apt install redis-server
 redis-server
 ```
 
-### Run the ui
+### Run the UI
 ```
 FLASK_APP=meloshare/ui/app.py flask run
 ```
 
 ### Run the API
 ```
-FLASK_APP=meloshare/ui/app.py flask run
+FLASK_APP=meloshare/api/app.py flask run
 ```
 
 ### Run the worker

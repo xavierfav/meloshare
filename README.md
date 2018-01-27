@@ -4,12 +4,13 @@ Built using Python Flask, Flask-Flash, Celery and Redis.
 
 ## Quickstart (Docker)
 You'll need to have `docker` and `docker-compose` installed.
-Run the docker-compose.yml file in the root directory of the app:
+
+Build and run the services:
 ```
 docker-compose up
 ```
 
-* Run it in background by using `docker-compose up -d` (detached).
+* Run in the background by using `docker-compose up -d` (detached).
 * Tail the logs by using `docker-compose`.
 
 **Note:** If you get a "version unsupported" error, you need to upgrade `docker-compose`:

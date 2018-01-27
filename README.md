@@ -5,7 +5,7 @@ Built using Python Flask, Flask-Flash, Celery and Redis.
 ## Quickstart (Docker)
 You'll need to have `docker` and `docker-compose` installed.
 
-Note: To get a compatible docker-compose, don't use `yum` to install it.
+**Note:** To get a compatible docker-compose, don't use `yum` to install it.
 As sudo user, type:
 ```
 rm /usr/bin/docker-compose

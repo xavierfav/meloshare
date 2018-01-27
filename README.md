@@ -5,6 +5,8 @@ Built using Python Flask, Flask-Flash, Celery and Redis.
 ## Quickstart
 Let's clone the repo, create a virtualenv, install the pip requirements and run our application.
 
+In a terminal (Ubuntu here):
+
 ```
 # Get the code
 git clone https://github.com/xavierfav/meloshare

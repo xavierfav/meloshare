@@ -6,4 +6,3 @@ ADD ./nginx.conf /etc/nginx/conf.d/
 COPY . /var/www/meloshare
 WORKDIR /var/www/meloshare
 RUN pip install -r requirements.txt
-CMD ["supervisord -c supervisord.conf"]

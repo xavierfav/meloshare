@@ -9,7 +9,6 @@ click==6.7
 Faker==0.8.10
 Flask==0.12.2
 Flask-Caching==1.3.3
-Flask-Flash==1.6.8
 Flask-HTTPAuth==3.2.3
 Flask-JSGlue==0.3.1
 flask-marshmallow==0.8.0
@@ -28,17 +27,23 @@ MarkupSafe==1.0
 marshmallow==2.15.0
 marshmallow-sqlalchemy==0.13.2
 meld3==1.0.2
+-e git+https://github.com/xavierfav/meloshare@43f480053e170babb71b55d9df728e8e437693c9#egg=meloshare
 numpy==1.14.0
+pkginfo==1.4.1
 python-dateutil==2.6.1
+python-dotenv==0.7.1
 python-editor==1.0.3
 pytz==2017.3
 PyYAML==3.12
 redis==2.10.6
 requests==2.18.4
+requests-toolbelt==0.8.0
 six==1.11.0
 SQLAlchemy==1.2.2
 supervisor==3.3.3
 text-unidecode==1.1
+tqdm==4.19.5
+twine==1.9.1
 urllib3==1.22
 vine==1.1.4
 Werkzeug==0.14.1

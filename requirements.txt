@@ -31,7 +31,7 @@ MarkupSafe==1.0
 marshmallow==2.15.0
 marshmallow-sqlalchemy==0.13.2
 meld3==1.0.2
--e git+https://github.com/xavierfav/meloshare@e3c61d0541dd48a13a4ac413d076abd7a8cf1645#egg=meloshare
+-e git+https://github.com/xavierfav/meloshare@6be7b55de33a13b0bb7a3e8c575d11d6dc1a04dc#egg=meloshare
 numpy==1.14.0
 pkginfo==1.4.1
 python-dateutil==2.6.1

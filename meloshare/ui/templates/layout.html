@@ -14,7 +14,9 @@
     <div class='ui padded container'>
       </br>
       {% include "navbar.html" %}
-      {% block body %} <!-- Override in other templates --> {% endblock %}
+      <div class='ui segment'>
+        {% block body %} <!-- Override in other templates --> {% endblock %}
+      </div>
     </div>
     {% block js_core_assets %}
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

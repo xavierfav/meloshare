@@ -1,0 +1,3 @@
+[submodule "meloshare/ui/static/js/vendor/waax"]
+	path = meloshare/ui/static/js/vendor/waax
+	url = https://github.com/hoch/WAAX

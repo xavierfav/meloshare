@@ -1,5 +1,5 @@
 from flask import Blueprint
 
-home = Blueprint('pianoroll', __name__)
+pianoroll = Blueprint('pianoroll', __name__)
 
 import routes

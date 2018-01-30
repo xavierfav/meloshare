@@ -12,8 +12,8 @@ cd meloshare
 docker-compose up
 ```
 
+* Check that the UI is running by navigating to `localhost:5000`.
 * Run in the background by using `docker-compose up -d` (detached).
-* Check the UI is running by navigating to `localhost:5000`.
 * Tail the logs by using `docker-compose logs -f`.
 * Restart individual services by running `docker-compose restart <service_name>`
 

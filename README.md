@@ -23,7 +23,7 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.11.1/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-## Quickstart
+## Quickstart (supervisor)
 Let's clone the repo, create a virtualenv, install the pip requirements and run our application.
 
 In a terminal (Ubuntu here):

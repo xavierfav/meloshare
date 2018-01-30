@@ -7,6 +7,8 @@ You'll need to have `docker` and `docker-compose` installed.
 
 Run meloshare:
 ```
+git clone https://github.com/xavierfav/meloshare
+cd meloshare
 docker-compose up
 ```
 

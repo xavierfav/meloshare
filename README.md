@@ -65,8 +65,8 @@ You can reload the supervisor configuration and update the running processes: `r
 
 ## Running services manually
 
-Supervisor is merely running commands for you and control the life of your processes.
-The following shows which command is run by supervisor for each service.
+Supervisor / Docker are merely running commands for you and control the life of your processes.
+The following shows which command is run for each service.
 
 ### Run Redis
 ```

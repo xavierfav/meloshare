@@ -3,7 +3,7 @@ Collaborative music sketching web application.
 Built using Python Flask, Flask-Flash, Celery and Redis.
 
 ## Quickstart (Docker)
-You'll need to have `docker` and `docker-compose` installed.
+Note: You'll need to have `docker` and `docker-compose` installed.
 ```
 git clone https://github.com/xavierfav/meloshare
 cd meloshare

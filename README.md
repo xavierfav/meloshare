@@ -66,7 +66,7 @@ You can reload the supervisor configuration and update the running processes: `r
 ## Development
 
 Supervisor / Docker are merely running commands for you and control the life of your processes.
-The following shows which command is run for each service.
+The following shows which command is run for each service. This is useful for development when you want to quickly bounce services.
 
 ### Run Redis
 ```

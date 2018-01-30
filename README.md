@@ -63,7 +63,7 @@ You can pass a space-separated list of services to control multiple simultaneous
 
 You can reload the supervisor configuration and update the running processes: `reread` and then `update`.
 
-## Running services manually
+## Development
 
 Supervisor / Docker are merely running commands for you and control the life of your processes.
 The following shows which command is run for each service.

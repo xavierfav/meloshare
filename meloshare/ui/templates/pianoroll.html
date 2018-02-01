@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+
+{% block js_assets %}
+  <script src="{{ url_for('static', filename='js/pianoroll.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+  <canvas id="background-canvas" style="height: 100%; width: 100%;"></canvas>
+{% endblock %}

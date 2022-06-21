@@ -32,7 +32,7 @@ marshmallow==2.15.0
 marshmallow-sqlalchemy==0.13.2
 meld3==1.0.2
 -e git+https://github.com/xavierfav/meloshare@6be7b55de33a13b0bb7a3e8c575d11d6dc1a04dc#egg=meloshare
-numpy==1.14.0
+numpy==1.22.0
 pkginfo==1.4.1
 python-dateutil==2.6.1
 python-dotenv==0.7.1
